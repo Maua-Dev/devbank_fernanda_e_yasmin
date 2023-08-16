@@ -8,7 +8,7 @@ class User:
     account: str
     current_balance: float
 
-def __init__(self, name:srt= None, agency: str=None, account: str=None, current_balance: float=None):
+def __init__(self, name:str= None, agency: str=None, account: str=None, current_balance: float=None):
     validation_name = self.validate_name(name)
     if validation_name[0] is False:
         raise ParamNotValidated("name", validation_name[1])
