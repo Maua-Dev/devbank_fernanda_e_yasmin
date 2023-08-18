@@ -1,6 +1,7 @@
 from typing import Tuple
 from src.app.enums.transaction_type_enum import TransactionTypeEnum
 from ..errors.entity_errors import ParamNotValidated
+
 import datetime
 
 class Transactions:
