@@ -1,13 +1,13 @@
 from typing import Tuple
-from src.app.enums.transaction_type_enum import TransactionTypeEnum
+from ..enums.transaction_type_enum import TransactionTypeEnum
 from ..errors.entity_errors import ParamNotValidated
 
 import datetime
 
 class Transactions:
-    transaction_type = TransactionTypeEnum
-    current_balance = float
-    timestamp = float
+    transaction_type: TransactionTypeEnum
+    current_balance: float
+    timestamp: float
 
 def __init__(self, transaction_type= None, current_balance= 0, timestamp=0):
     validation_transaction_type = self.validate_transaction_type(transaction_type)
