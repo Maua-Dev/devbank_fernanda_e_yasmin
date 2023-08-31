@@ -1,5 +1,5 @@
 from enum import Enum
 
 class TRANSACTION_TYPE_ENUM(Enum):
-    WITHDRAW="WTHDRAW"
+    WITHDRAW="WITHDRAW"
     DEPOSIT="DEPOSIT"
