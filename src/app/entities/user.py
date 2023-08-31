@@ -66,3 +66,11 @@ class User:
         if type(current_balance) != float:
             return (False, "Current balance must be a float")
         return (True, "")
+    
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "agency": self.agency,
+            "account": self.account,
+            "current_balance": self.current_balance
+        }

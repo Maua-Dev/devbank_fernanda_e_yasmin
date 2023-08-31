@@ -4,7 +4,7 @@ from ..entities.user import User
 
 
 class UserRepositoryMock(IUserRepository):
-    def __ini__(self):
+    def __init__(self):
         user : User
         self.user=User(name= "Fernanda", agency="1234", account="12345-6", current_balance=8000.0)
 
